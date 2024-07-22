@@ -8,3 +8,5 @@ Programming Language: Python
 Framework: LangChain
 
 API: Oracle Cloud Infrastructure
+
+Package(s): ChromaDB, LangChain_Community+Core+Text, LangSmith, PyPDF, Wise
