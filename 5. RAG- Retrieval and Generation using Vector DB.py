@@ -9,7 +9,7 @@ from langchain_community.embeddings import CohereEmbeddings
 llm = OCIGenAI(
     model_id = "cohere.command-light",
     service_endpoint = "https://inference.generativeai.us-chicago-1.oci.oraclecloud.com",
-    compartment_id = "ocid1.compartment.oc1..aaaaaaaa345eyrbwg2ujmzjbhzuzi2szp64l3tx5ypeoqlnitxi7u6jlpsfa",
+    compartment_id = "x",
     model_kwargs={"max_tokens":100}
 )
 
@@ -20,7 +20,7 @@ client = chromadb.HttpClient(host="127.0.0.1")
 embeddings=OCIGenAIEmbeddings(
     model_id="cohere.embed-english-v3.0",
     service_endpoint= "https://inference.generativeai.us-chicago-1.oci.oraclecloud.com",
-compartment_id = "ocid1.compartment.oc1..aaaaaaaa345eyrbwg2ujmzjbhzuzi2szp64l3tx5ypeoqlnitxi7u6jlpsfa",
+compartment_id = "x,
 )
 
 # Create a retriever that gets relevant docs (similar to a query)
