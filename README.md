@@ -7,6 +7,6 @@ Programming Language: Python
 
 Framework: LangChain
 
-API: Oracle Cloud Infrastructure
+LLM: Oracle Cloud Infrastructure Generative AI
 
 Package(s): chromadb, langchain-community+core+text, langsmith, pypdf, wise, pydantic, python-multipart, faiss-cpu, oracle-ads, oci
