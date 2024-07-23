@@ -9,4 +9,4 @@ Framework: LangChain
 
 API: Oracle Cloud Infrastructure
 
-Package(s): ChromaDB, LangChain_Community+Core+Text, LangSmith, PyPDF, Wise
+Package(s): chromadb, langchain-community+core+text, langsmith, pypdf, wise, pydantic, python-multipart, faiss-cpu, oracle-ads, oci
