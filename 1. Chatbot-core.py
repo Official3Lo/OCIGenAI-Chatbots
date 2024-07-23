@@ -33,7 +33,7 @@ template = """You are a chatbot having a conversation with a human.
 Human: {user_input} + {city}
 :"""
 
-#Created a prompt using the templaye
+#Created a prompt using the template
 
 prompt = PromptTemplate(input_variables=["user_input","city"], template=template)
 
