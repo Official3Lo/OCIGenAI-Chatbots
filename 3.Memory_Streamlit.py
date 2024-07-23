@@ -9,7 +9,7 @@ import oci
 llm = OCIGenAI(
     model_id = "cohere.command-light",
     service_endpoint = "https://inference.generativeai.us-chicago-1.oci.oraclecloud.com",
-    compartment_id = "ocid1.compartment.oc1..aaaaaaaa345eyrbwg2ujmzjbhzuzi2szp64l3tx5ypeoqlnitxi7u6jlpsfa",
+    compartment_id = "x",
     model_kwargs={"max_tokens":100}
 )
 
