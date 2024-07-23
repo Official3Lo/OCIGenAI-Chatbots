@@ -1,5 +1,5 @@
 # OCIGenAICourse
-This is where my work-in-progress and development of my Python programming skill for building a custom chatbot using OCI Generative AI for Oracle University.
+This is where my work-in-progress and development of my Python programming skill for building a custom chatbot using OCI Generative AI API and the LangChain framework at Oracle University.
 
 IDE: PyCharm
 
