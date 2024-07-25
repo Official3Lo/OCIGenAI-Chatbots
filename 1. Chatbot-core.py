@@ -37,12 +37,12 @@ Human: {user_input} + {city}
 
 prompt = PromptTemplate(input_variables=["user_input","city"], template=template)
 
-prompt_val=prompt.invoke({"user_input":"Tell is in an exciting tone about", "city":"Las Vegas"})
+prompt_val=prompt.invoke({"user_input":"Tell us in an exciting tone about", "city":"Las Vegas"})
 print("Prompt string is ->")
 print(prompt_val.to_string())
 
 #Declared chain that begins the prompt, next llm and final output of parser
-chain= prompt | llm
+chain = prompt | llm
 
 #Invoked chain and provide input question
 response = chain.invoke({"user_input":"Tell is in an exciting tone about", "city":"Las Vegas"})
