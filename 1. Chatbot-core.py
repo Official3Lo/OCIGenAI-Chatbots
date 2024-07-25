@@ -50,7 +50,7 @@ response = chain.invoke({"user_input":"Tell is in an exciting tone about", "city
 #print prompt and response from llm
 print("Case2 Response ->"+response)
 
-#Step 8 - Used Chat Prompt to accept text input. Created a chat templae and used HumanMessage and SystemMessage
+#Used Chat Prompt to accept text input. Created a chat templae and used HumanMessage and SystemMessage
 
 prompt = ChatPromptTemplate.from_messages(
     [
