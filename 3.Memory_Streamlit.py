@@ -26,7 +26,7 @@ memory=ConversationBufferMemory(chat_memory=history)
 
 #Create template and prompt to accept a question
 template="""You are an AI chatbot having a converstion with a human user.
-Human: {user_input}
+User: {user_input}
 AI: """
 prompt = PromptTemplate(input_variables=["user_input"],template=template)
 
