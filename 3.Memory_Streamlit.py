@@ -42,7 +42,7 @@ for msg in history_messages:
     st.chat_message(msg.type).write(msg.content)
 
 if x:= st.chat_input():
-    st.chat_message("human").write(x)
+    st.chat_message("user").write(x)
 
     #new msg added to streamlitchatmsghistory when chain is called
     response = llm_chain.run(x)
