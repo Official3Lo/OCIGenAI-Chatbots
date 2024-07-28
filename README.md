@@ -1,5 +1,5 @@
 # OCIGenAICourse
-This is where my work-in-progress and development of my Python programming skill for building a custom chatbot using OCI Generative AI Service and the LangChain framework at Oracle University.
+This is where my work-in-progress and development of my Python programming skill for Build a Retrieval-Augmented Generation (RAG) based chatbot using OCI Generative AI Service and the LangChain framework at Oracle University.
 
 IDE: PyCharm
 
