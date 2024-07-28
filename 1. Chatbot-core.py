@@ -30,14 +30,14 @@ print("Case1 Response ->" + response)
 #string prompt
 
 template = """You are a chatbot having a conversation with a human.
-Human: {user_input} + {city}
+Human: {human_input} + {city}
 :"""
 
 #Created a prompt using the template
 
-prompt = PromptTemplate(input_variables=["user_input","city"], template=template)
+prompt = PromptTemplate(input_variables=["human_input","city"], template=template)
 
-prompt_val=prompt.invoke({"user_input":"Tell us in an exciting tone about", "city":"Las Vegas"})
+prompt_val=prompt.invoke({"human_input":"Tell us in an exciting tone about", "city":"Las Vegas"})
 print("Prompt string is ->")
 print(prompt_val.to_string())
 
@@ -45,7 +45,7 @@ print(prompt_val.to_string())
 chain = prompt | llm
 
 #Invoked chain and provide input question
-response = chain.invoke({"user_input":"Tell is in an exciting tone about", "city":"Las Vegas"})
+response = chain.invoke({"human_input":"Tell is in an exciting tone about", "city":"Las Vegas"})
 
 #print prompt and response from llm
 print("Case2 Response ->"+response)
