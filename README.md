@@ -1,5 +1,5 @@
 # OCIGenAICourse
-This is my build of a Retrieval-Augmented Generation (RAG) based chatbot using OCI Generative AI Service and the LangChain framework at Oracle University.
+This is my build of a Retrieval-Augmented Generation (RAG) based chatbot using OCI Generative AI Service and the LangChain framework. This showcases my python skillsets and knowledge of Generative AI.
 
 IDE: PyCharm
 
