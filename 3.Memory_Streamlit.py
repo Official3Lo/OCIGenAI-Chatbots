@@ -25,10 +25,10 @@ memory=ConversationBufferMemory(chat_memory=history)
 
 
 #Create template and prompt to accept a question
-template="""You are an AI chatbot having a converstion with a human user.
-User: {user_input}
+template="""You are an AI chatbot having a converstion with a human.
+Human: {human_input}
 AI: """
-prompt = PromptTemplate(input_variables=["user_input"],template=template)
+prompt = PromptTemplate(input_variables=["human_input"],template=template)
 
 #Create chain object
 llm_chain=LLMChain(llm=llm,prompt=prompt,memory=memory)
@@ -42,7 +42,7 @@ for msg in history_messages:
     st.chat_message(msg.type).write(msg.content)
 
 if x:= st.chat_input():
-    st.chat_message("user").write(x)
+    st.chat_message("human").write(x)
 
     #new msg added to streamlitchatmsghistory when chain is called
     response = llm_chain.run(x)
