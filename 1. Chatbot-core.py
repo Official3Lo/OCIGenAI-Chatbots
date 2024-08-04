@@ -45,7 +45,7 @@ print(prompt_val.to_string())
 chain = prompt | llm
 
 #Invoked chain and provide input question
-response = chain.invoke({"human_input":"Tell is in an exciting tone about", "city":"Las Vegas"})
+response = chain.invoke({"human_input":"Tell us in an exciting tone about", "city":"Las Vegas"})
 
 #print prompt and response from llm
 print("Case2 Response ->"+response)
@@ -60,7 +60,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-chain= prompt | llm
+chain = prompt | llm
 response = chain.invoke({"input": "What's the New York culture like?"})
 print("Case3 Response ->" + response)
 
