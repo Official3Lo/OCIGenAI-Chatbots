@@ -15,5 +15,5 @@ Package(s): chromadb, langchain-community+core+text, langsmith, pypdf, wise, pyd
 # Requirements
 Oracle Cloud Infrastructure, Oracle Account, LangChain
 
-#Installation
+# Installation
 Little to none; just install oci application, run the OCI server cloud service and input your key and chatbot should be up.
